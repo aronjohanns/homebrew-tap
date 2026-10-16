@@ -1,25 +1,25 @@
 class Baosign < Formula
   desc "Sign SSH keys with OpenBao, using profiles like aws --profile"
   homepage "https://github.com/aronjohanns/baosign"
-  version "0.1.0"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/aronjohanns/baosign/releases/download/v0.1.0/baosign-aarch64-apple-darwin.tar.xz"
-      sha256 "e5a302f5bd8fa87f73b830bae7d707bc531ae44dd838588d36b3573f953556c5"
+      url "https://github.com/aronjohanns/baosign/releases/download/v0.2.0/baosign-aarch64-apple-darwin.tar.xz"
+      sha256 "16d883683175725f64dcbc806ecbecc6aec935640232d47eca0b490209fa355c"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/aronjohanns/baosign/releases/download/v0.1.0/baosign-x86_64-apple-darwin.tar.xz"
-      sha256 "e399bc6906beb5f88a4527f93b8aaf22d7f6e458140b2f52d234b6f7a7811f2b"
+      url "https://github.com/aronjohanns/baosign/releases/download/v0.2.0/baosign-x86_64-apple-darwin.tar.xz"
+      sha256 "8b8c38532afeb505f7093d65d4d98650207731bc9fb39396022703811f6f4207"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/aronjohanns/baosign/releases/download/v0.1.0/baosign-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "cc989f0e7257f9cf6bab80ffde518b19a3ce92ae08c9525aae5939506e43f052"
+      url "https://github.com/aronjohanns/baosign/releases/download/v0.2.0/baosign-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "264cee8d4e7b24a3f4bbfdecf4b93014262c00d486e3805635b6bb04fb8326ff"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/aronjohanns/baosign/releases/download/v0.1.0/baosign-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "3aa62f63858b47f4e23c759938e7268c88b2bac32f50488c9e219675f752e0fe"
+      url "https://github.com/aronjohanns/baosign/releases/download/v0.2.0/baosign-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "8337416cb2d1978f0775ba88cdc552543757b777794ecbbca38d06cca3551167"
     end
   end
   license "MIT"
